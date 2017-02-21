@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title> Wellesleypedia  </title>
+    <link rel="stylesheet" type="text/css" href="WPStyle.css">
+    <meta name = "viewport" content = "width = device-width,user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <script type="text/javascript" src="scrollingScript.js"></script>
+    <!-- figure out how to script a scroll down animation to the hash -->
+
+</head>
+
+<body>
+    <!-- HTML5 article tag for content -->
+    <!--
+  Problem statement. A concise statement of the problem your project is trying to solve.
+  P1 Requirement analysis. This section should contain the report for this assignment, with three subsections:
+  0. Summary of user observations and interviews – summarize your finding and conclusions from observing and talking to potential users. Remember - don't identify the users you interviewed by name, unless you get their permission to do so.
+  1. Users. Your user analysis from this assignment, describing your major user classes and their characteristics. A summary of the interviews, and a persona for each user class.
+  2. Tasks. Provide a summary of the 5 (or more) high-level tasks you have identified.
+  Every task should have a goal and subtasks. Some tasks may also need preconditions, exceptions, time constraints, and frequency of use.
+  In addition, present a hierarchical task diagram that shows the decomposition of each task to subtasks.
+  3. Domain. An ERD model that describes your domain.
+  Include commentary about any entities or relations that aren't obvious.
+-->
+<nav id="main_nav">
+   <ul>
+      <li><a href="#product"> Product </a></li>
+      <li><a href="#process"> Process </a></li>
+      <li><a href="#planning"> Planning </a></li>
+   </ul>
+</nav>
+
+<!--
+Project name. Team members. A list of your team members.
+-->
+<div id = "topBlock" class = "block">
+  <!-- eventually will have prototype here -->
+  <h1> Welcome to Wellesleypedia</h1>
+  <p id = "byLine"> by Havannah Tran, Jee Lee, and Michelle Quin </p>
+</div>
+
+<div id = "P1" class = "block">
+  <header>
+     <a name = "planning"> <h2> P1 Requirement Analysis</h2></a>
+  </header>
+
+
+  <h3> Problem statement </h3>
+  <p> Because Wellesley boasts a diverse community,
+    we acknowledge that incoming students will come
+    in with varying backgrounds on social and political topics.
+    However, the community right now doesn’t have a platform specifically
+    geared towards proliferating information, without those asking questions
+    feeling attacked for being ignorant, and without those answering questions
+    feeling like they are expending emotional labor. Additionally, there is no
+    condensed base for all the language used when having social justice conversations,
+    which can be problematic and elitist.
+ </p>
+
+ <h3> 0. Summary of user observations and interviews </h3>
+
+  <h3> 1. Users. </h3>
+    <p> Wellesley students and faculty seeking to learn about or educate
+      others on political and social justice knowledge and terminology
+      relevant to Wellesley College. Since our app is available to both
+      Wellesley students and faculty, our target group is a rather large one,
+      with the majority being 18 to 22-year-olds (college students) who use
+      their smartphones and laptops on a daily basis.</p>
+ <p>
+   <strong> Persona 1: </strong> Sally is an upper middle class Caucasian 18-year-old
+   first year from Minnesota with little to no knowledge
+   or experience talking about social justice issues.
+   She plans to be pre-med and double majoring in Biology
+   and English, and hopes to be a pediatrician one day
+   just like her mom. Sally is in the Pre-Med Society
+   and the Botanistas. She wants to tea for a society
+   next year and is applying to be an RA. She loves to
+   travel to Europe for family vacations and read Jane
+   Austen novels. She is fairly savvy and uses her iPhone
+   7 and Macbook Pro on a daily basis for schoolwork and
+   social media. Since entering Wellesley, she has found
+   that she does not know a lot of appropriate terminology or
+   how to engage in political or identity dialogue. </p>
+   <p> <strong> Persona 2: </strong> Chad is a tenured Wellesley American Studies professor
+     in his late sixties. He is a Latinx male from Cambridge,
+     Massachusetts, where he resides with his partner (a Harvard professor)
+     and daschund named Selena. He is very knowledgable on civil rights,
+     gay and trans rights, and Chicano history. He is known amongst students
+     for his classes on 1900s Latinx popular culture and music. He is progressive
+     but does not engage in many contemporary discussions on social justice.
+     Chad is an expert in Chicano studies but has not has the chance to engage in
+     other discussions, especially with young people besides his students.
+     The only technology that Chad interacts with is Gmail and Google Drive to
+     send emails and documents to his students; occasionally he tries to struggle
+     with Sakai (in vain). Chad goes to local concerts on the weekends and takes
+     walks by the Charles with his partner and dog. Chad wears glasses. </p>
+  <p> <strong> Persona 3: </strong> Sam is an extroverted, queer black 22-year-old senior studying Women
+    and Gender Studies with a minor in Comparative Race and Ethnicity.
+    They are a Mellon Mays Fellow, intending to get their Ph.d in
+    Women and Gender studies, with an emphasis on Black Feminist
+    philosophy. They’re currently writing their thesis on Assata Shakur and Angela Y.
+    Davis. Sam works at Cafe Hoop and volunteers for local organizing groups in
+    Boston and the Black Lives Matter chapter. They are extremely busy and do not
+    have much spare time, but use the little free time they have to run a personal
+    commentary blog. They are very tech savvy and uses technology as a platform to
+    propagate their own knowledge and to organize events. </p>
+  <p> <strong> Persona 4: </strong> Grace is an introverted 20-year-old sophomore
+    who studies Psychology at Wellesley, and is from Tokyo but was born
+    in Los Angeles, California. She lives on East Side and spends most of
+    her time in the Science Center or hanging out with her small group of friends
+    in her room. She watches Netflix and dramas in her free time, and is not
+    involved in any organizations on campus. She has a working knowledge of
+    political and social terminology and is aware of current political and social
+    justice issues, but is not interested in exploring such topics in depth.
+    She would, however, like to be more familiar with and passively engage in
+    terminology and topics relevant to Wellesley, so as to not come be ignorant
+    amongst her peers. She plans to find a job right after graduation. She does
+    not have social media but uses her Android phone to text and her Lenovo
+    Thinkpad for homework. She is fluent in Japanese and is learning Spanish at Wellesley.</p>
+
+    <p> <strong> User-Interview 1: English Major, Class of 2019, Asian International Student </strong> </p>
+    <ul>
+      <li>Has iPhone and Lenovo laptop, spends 4 to 5 hours per day using technology </li>
+      <li> Not very familiar with question-answer forums or crowdsourced encyclopedias </li>
+      <li> Does not use Wikipedia or Quora or related forums </li>
+      <li> Somewhat familiar with social and political justice terminology and issues, sometimes new or unknown terms come up </li>
+      <li> Political and social justice topics and terms come up a lot on a daily basis at Wellesley due to her friends’ interests </li>
+      <li> Personally is not passionate about political and social justice </li>
+      <li> Uses Google and her friends to find information on social and political justice </li>
+      <li> Feels fine regarding her social and political knowledge </li>
+      <li> Feels that people at Wellesley are scared to be politically incorrect </li>
+      <li> Wishes there could be a smart social media platform that can figure out how to have articles on topics the user never clicks on appear </li>
+    </ul>
+
+    <p> <strong> User-Interview 2: Chinese Major and CAMS Minor, Class of 2019, Caucasian Queer Student </strong></p>
+    <ul>
+      <li> Has iPhone and MacBook Pro, spends 5 to 6 hours per day on technology </li>
+      <li> Somewhat familiar with question-answer forums and crowdsourced encyclopedias </li>
+      <li> Does not regularly use Wikipedia, Quora, or related forums </li>
+      <li> Very familiar with political and social justice topics and terms </li>
+      <li> Finds that political and social justice terminology and issues come up pretty often on a daily basis at Wellesley </li>
+      <li> Uses books, Google, courses, and news to find information on social and political justice </li>
+      <li> Is always seeking to update knowledge and believes there is always more to learn </li>
+      <li> Feels that Wellesley does not foster an educative environment or dialogue for those who come from a background not as knowledgeable </li>
+      <li> Wishes there could be informational meetings, ask anythings, one-on-one resources, or any sort of research for beginners </li>
+   </ul>
+
+
+
+
+  <h3> Tasks </h3>
+  <p> We decided that there were three tasks in which users would have to do to use our app:
+  make an account, contribute a question, and contribute an answer.</p>
+  <p> Make an Account</p>
+  <img src = "task1.png" alt = "diagram of how to make an account">
+  <p> Contribute a Question </p>
+  <img src = "task2.png" alt = "diagram of how to contribute a question">
+  <p> Contribute an Answer </p>
+  <img src = "task3.png" alt = "diagram of contribute an answer">
+
+
+  <h3> Domain </h3>
+  <p> <!-- put in ERD model --> </p>
+
+</div>
+
+
+</body>
+</html>
