@@ -9,6 +9,16 @@ body {
   padding: 5px;
 }
 
+.vis{
+  display:inline-block;
+}
+
+#images{
+  margin-right:auto;
+  margin-left:auto;
+  width:950px;
+}
+
 #topBlock {
   margin-top:50px;
 }
